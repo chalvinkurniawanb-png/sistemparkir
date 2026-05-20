@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Parkir Siswa</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Sistem Parkir Siswa</h1>
+
+    <form id="parkirForm">
+      <input type="text" id="nama" placeholder="Nama Siswa" required>
+
+      <input type="text" id="kelas" placeholder="Kelas" required>
+
+      <input type="text" id="plat" placeholder="Nomor Plat Kendaraan" required>
+
+      <select id="kendaraan" required>
+        <option value="">Pilih Kendaraan</option>
+        <option value="Motor">Motor</option>
+        <option value="Sepeda">Sepeda</option>
+      </select>
+
+      <button type="submit">
+        Tambah Data</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Plat</th>
+          <th>Kendaraan</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+
+      <tbody id="tabelParkir">
+      </tbody>
+    </table>
+
+    <div class="info" id="totalParkir">
+      Total Kendaraan: 0
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
